@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+body{
+    font-family: "Poppins";
+    background-color: #e6782b;
+    color: #fff6e3;
+}
+
+.box{
+    width: 600px;
+    height: 100%;
+    background-color: #fff6e3;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #913436;
+    color: #913436;
+}
+
+.input-feedback{
+    width: 500px;
+    height: 50px;
+    background: none;
+    border: 1px solid #913436;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #913436;
+}
+
+.input-feedback::placeholder{
+    color: #913436;
+}
+
+.text-massage{
+    width: 500px;
+    height: 150px;
+    background: none;
+    border: 1px solid #913436;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #913436;
+}
+
+.input-feedback:focus{
+    outline: none;
+    border: 1px solid #913436;
+}
+
+.text-massage:focus{
+    outline: none;
+    border: 1px solid #913436;
+}
+
+.btn-submit{
+    background-color: #913436;
+    width: 200px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.btn-submit:hover{
+    background-color: #e6782b;
+    color: #292827;
+}
+
+.sliders{
+    height: 130px;
+    overflow: hidden;
+}
+
+@keyframes slidee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.box-slide{
+    /* white-space: nowrap; */
+    display: inline-block;
+    /* position: relative; */
+    /* left: 100%; */
+    animation: 30s slidee infinite linear;
+}
+
+.slide{
+    /* overflow: hidden; */
+    width: 400px;
+    height: 100%;
+    background-color: #913436;
+    border-radius: 20px;
+    color: #fff6e3;
+    /* box-shadow: 1px 1px 10px #913436; */
+    padding: 5px 5px 5px 5px;
+    margin-left: 10px;
+}
+
+.kiri,
+.kanan{
+    height: 100%;
+}
+
+.kanan{
+    padding-left: 0;
+    font-size: 13px;
+}
+
+.random-image{
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+}
+
+.alert {
+    width: 500px;
+    height: 50px;
+}
+
+@media (max-width: 480px) {
+ 
+    .input-feedback{
+        width: 320px;
+        height: 50px;
+        background: none;
+        border: 1px solid #913436;
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: #913436;
+    }
+
+    .text-massage{
+        width: 320px;
+        height: 150px;
+        background: none;
+        border: 1px solid #913436;
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: #913436;
+    }
+    
+    .responsive{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .kiri{
+        width: 100px;
+    }
+
+    .kanan{
+        width: 250px;
+    }
+    
+}
